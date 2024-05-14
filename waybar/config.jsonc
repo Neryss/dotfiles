@@ -4,31 +4,35 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 33, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 8, // Gaps between modules (4px)
+    "margin-top": 4,
+    "margin-bottom": -15,
+    "margin-right": 20,
+    "margin-left": 20,
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
+        // "hyprland/workspaces",
+        // "sway/mode",
+        // "sway/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
-        // "mpd",
-        "idle_inhibitor",
+        // "idle_inhibitor",
         "pulseaudio",
         "network",
         // "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
+        // "temperature",
+        // "backlight",
         // "keyboard-state",
         // "sway/language",
         // "battery",
         // "battery#bat2",
+        "mpd",
         "clock",
         "tray"
     ],
@@ -68,6 +72,9 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    "hyprland/window": {
+        "format": "{}"
+    },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
@@ -93,17 +100,6 @@
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
     },
     "clock": {
 	"timezone": "Europe/Paris",
@@ -178,7 +174,7 @@
         "format-icons": {
             "headphone": "",
             "hands-free": "",
-            "headset": "",
+            "headset": "🎜",
             "phone": "",
             "portable": "",
             "car": "",
