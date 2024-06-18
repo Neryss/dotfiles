@@ -9,6 +9,7 @@ Various dotfiles for my Arch install
 - [Kitty](https://sw.kovidgoyal.net/kitty/)
 - [Wofi](https://archlinux.org/packages/extra/x86_64/wofi/)
 - [Yazi](https://github.com/sxyazi/yazi)
+- [Hyprlock](https://github.com/hyprwm/hyprlock)
 
 ### Console funzies
 
